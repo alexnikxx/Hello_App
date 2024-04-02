@@ -9,11 +9,45 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let textLogin = UILabel()
-    let textPassword = UILabel()
-    let login = UITextField()
-    let password = UITextField()
-    let button = UIButton(type: .system)
+    let textLogin: UILabel = {
+        let label = UILabel()
+        label.text = "Login"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    let textPassword: UILabel = {
+        let label = UILabel()
+        label.text = "Password"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    let login: UITextField = {
+        let login = UITextField()
+        login.placeholder = "Fill your login"
+        login.borderStyle = .roundedRect
+        login.autocapitalizationType = .none
+        login.translatesAutoresizingMaskIntoConstraints = false
+        return login
+    }()
+    
+    let password: UITextField = {
+        let password = UITextField()
+        password.placeholder = "Fill your password"
+        password.borderStyle = .roundedRect
+        password.autocapitalizationType = .none
+        password.translatesAutoresizingMaskIntoConstraints = false
+        return password
+    }()
+    
+    let button: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Open", for: .normal)
+        button.addTarget(self, action: #selector(showSecondViewController), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,25 +59,11 @@ class ViewController: UIViewController {
         view.addSubview(textPassword)
         view.addSubview(password)
         view.addSubview(button)
-        
-        textLogin.text = "Login"
-        textPassword.text = "Password"
-        button.setTitle("Open", for: .normal)
-        button.addTarget(self, action: #selector(showSecondViewController), for: .touchUpInside)
-        
-        login.placeholder = "Fill your login"
-        password.placeholder = "Fill your password"
-        login.borderStyle = .roundedRect        
-        password.borderStyle = .roundedRect
-        login.autocapitalizationType = .none
-        password.autocapitalizationType = .none
-        
-        textLogin.translatesAutoresizingMaskIntoConstraints = false
-        login.translatesAutoresizingMaskIntoConstraints = false
-        textPassword.translatesAutoresizingMaskIntoConstraints = false
-        password.translatesAutoresizingMaskIntoConstraints = false
-        button.translatesAutoresizingMaskIntoConstraints = false
-        
+
+        setupView()
+    }
+    
+    private func setupView() {
         NSLayoutConstraint.activate([
             login.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             login.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -100),
@@ -67,7 +87,6 @@ class ViewController: UIViewController {
     @objc func showSecondViewController(_ sender: Any) {
         let secondViewController = SecondViewController()
         secondViewController.login = login.text
-        print(secondViewController.login)
         
         if password.text == "admin" {
             present(secondViewController, animated: true, completion: nil)

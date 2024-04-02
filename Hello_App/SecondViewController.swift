@@ -8,21 +8,30 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-    var greeting = UILabel()
     var login: String?
+
+    var greeting: UILabel = {
+        let label = UILabel()
+        label.text = "Hello, Sasha!"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
         view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         view.addSubview(greeting)
         greeting.text = "Hello, \(login ?? "Sasha")!"
-        
-        greeting.translatesAutoresizingMaskIntoConstraints = false
+
+        setupView()
+    }
+    
+    private func setupView() {
         NSLayoutConstraint.activate([
             greeting.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             greeting.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
-        // Do any additional setup after loading the view.
     }
 
 
