@@ -8,7 +8,16 @@
 import UIKit
 
 final class TaskTwoViewController2: UIViewController {
-    var delegate: TaskTwoViewController2Delegate?
+    private var delegate: TaskTwoViewController2Delegate?
+    
+    init(delegate: TaskTwoViewController2Delegate) {
+        self.delegate = delegate
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     private let label: UILabel = {
         let label = UILabel()

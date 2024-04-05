@@ -12,7 +12,7 @@ final class TaskTwoViewController1: UIViewController, TaskTwoViewController2Dele
         label.text = greeting
     }
     
-    var label: UILabel = {
+    private var label: UILabel = {
         let label = UILabel()
         label.text = "Привет!"
         label.font = .systemFont(ofSize: 40)
@@ -48,8 +48,7 @@ final class TaskTwoViewController1: UIViewController, TaskTwoViewController2Dele
     }
     
     @objc private func showNextViewController() {
-        let nextVC = TaskTwoViewController2()
-        nextVC.delegate = self
+        let nextVC = TaskTwoViewController2(delegate: self)
         navigationController?.pushViewController(nextVC, animated: true)
     }
 }
