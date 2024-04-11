@@ -8,11 +8,8 @@
 import UIKit
 
 final class TaskTwoViewController1: UIViewController, TaskTwoViewController2Delegate {
-    func delegate(greeting: String) {
-        label.text = greeting
-    }
     
-    private var label: UILabel = {
+    private let label: UILabel = {
         let label = UILabel()
         label.text = "Привет!"
         label.font = .systemFont(ofSize: 40)
@@ -37,7 +34,11 @@ final class TaskTwoViewController1: UIViewController, TaskTwoViewController2Dele
         
         setupView()
     }
-    
+
+    func delegate(greeting: String) {
+        label.text = greeting
+    }
+
     private func setupView() {
         NSLayoutConstraint.activate([
             label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
