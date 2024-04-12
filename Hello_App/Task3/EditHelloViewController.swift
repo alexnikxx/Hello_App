@@ -7,11 +7,11 @@
 
 import UIKit
 
-final class TaskThreeViewController3: UIViewController {
-    private var delegate: T3VC3Delegate?
+final class EditHelloViewController: UIViewController, UITextFieldDelegate {
+    private let greeting: Greeting
 
-    init(delegate: T3VC3Delegate) {
-        self.delegate = delegate
+    init(greeting: Greeting) {
+        self.greeting = greeting
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -38,9 +38,11 @@ final class TaskThreeViewController3: UIViewController {
 
     override func viewDidLoad() {
         view.backgroundColor = .white
+
+        textField.delegate = self
+
         view.addSubview(label)
         view.addSubview(textField)
-        
         setupView()
     }
 
@@ -49,8 +51,14 @@ final class TaskThreeViewController3: UIViewController {
         self.tabBarController?.navigationItem.hidesBackButton = true
     }
 
-    private func greetingWasChanged() {
-        delegate?.delegate(greeting: textField.text ?? "Привет")
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        updateHello(self.textField.text ?? "Hello")
+        textField.resignFirstResponder()
+        return true
+    }
+
+    private func updateHello(_ hello: String) {
+        greeting.hello = hello
     }
 
     private func setupView() {

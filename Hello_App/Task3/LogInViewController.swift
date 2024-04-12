@@ -7,18 +7,9 @@
 
 import UIKit
 
-final class TaskThreeViewController1: UIViewController {
-    private var delegate: T3VC1Delegate?
+final class LogInViewController: UIViewController {
+    private let greeting = Greeting()
 
-    init(delegate: T3VC1Delegate) {
-        self.delegate = delegate
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     private let label: UILabel = {
         let label = UILabel()
         label.text = "Введите имя:"
@@ -51,14 +42,17 @@ final class TaskThreeViewController1: UIViewController {
         view.addSubview(label)
         view.addSubview(textField)
         view.addSubview(button)
-
         setupView()
     }
 
     @objc private func nameWasEntered() {
-        delegate?.delegate(name: textField.text ?? "Алекс")
-        let vc = TabBarController()
+        updateName(textField.text ?? "Alex")
+        let vc = TabBarController(greeting: greeting)
         navigationController?.pushViewController(vc, animated: true)
+    }
+
+    private func updateName(_ name: String) {
+        greeting.name = name
     }
 
     private func setupView() {

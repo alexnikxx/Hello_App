@@ -7,13 +7,21 @@
 
 import UIKit
 
-final class TaskThreeViewController2: UIViewController, T3VC1Delegate, T3VC3Delegate {
-    private var name = "Бродяга"
-    private var greeting = "Здарова"
+final class HelloViewController: UIViewController {
+    private let greeting: Greeting
 
-    private var label: UILabel = {
-        var label = UILabel()
-        label.text = "Привет, Алекс"
+    init(greeting: Greeting) {
+        self.greeting = greeting
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private let label: UILabel = {
+        let label = UILabel()
+        label.text = ""
         label.font = .systemFont(ofSize: 30, weight: .medium)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -23,21 +31,13 @@ final class TaskThreeViewController2: UIViewController, T3VC1Delegate, T3VC3Dele
         super.viewDidLoad()
         view.backgroundColor = .white
         view.addSubview(label)
-
         setupView()
-    }
-
-    func delegate(name: String) {
-        label.text = "\(greeting), \(name)"
-    }
-
-    func delegate(greeting: String) {
-        label.text = "\(greeting), \(name)"
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.tabBarController?.navigationItem.hidesBackButton = true
+        label.text = "\(greeting.hello), \(greeting.name)"
     }
 
     private func setupView() {

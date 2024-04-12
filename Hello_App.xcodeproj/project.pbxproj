@@ -14,14 +14,13 @@
 		2A1F21F12BB5A8E60081DBEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A1F21EF2BB5A8E60081DBEF /* LaunchScreen.storyboard */; };
 		2A1F21FA2BB5A9B40081DBEF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F21F82BB5A9B40081DBEF /* SecondViewController.swift */; };
 		2A1FAB922BC85D960045213B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FAB912BC85D960045213B /* TabBarController.swift */; };
-		2A1FAB942BC865940045213B /* T3VC1Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FAB932BC865940045213B /* T3VC1Delegate.swift */; };
-		2A1FAB962BC866420045213B /* T3VC3Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FAB952BC866420045213B /* T3VC3Delegate.swift */; };
+		2A1FAB982BC873180045213B /* Greeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FAB972BC873180045213B /* Greeting.swift */; };
 		2A2D2A052BC05FAD00A28421 /* TaskTwoViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D2A042BC05FAD00A28421 /* TaskTwoViewController1.swift */; };
 		2A2D2A072BC05FBE00A28421 /* TaskTwoViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D2A062BC05FBE00A28421 /* TaskTwoViewController2.swift */; };
 		2A2D2A0A2BC07AC500A28421 /* TaskTwoViewController2Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D2A092BC07AC500A28421 /* TaskTwoViewController2Delegate.swift */; };
-		2ABEED432BC83B2B00FA057E /* TaskThreeViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEED422BC83B2B00FA057E /* TaskThreeViewController1.swift */; };
-		2ABEED452BC83BBC00FA057E /* TaskThreeViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEED442BC83BBC00FA057E /* TaskThreeViewController2.swift */; };
-		2ABEED472BC83BDC00FA057E /* TaskThreeViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEED462BC83BDC00FA057E /* TaskThreeViewController3.swift */; };
+		2ABEED432BC83B2B00FA057E /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEED422BC83B2B00FA057E /* LogInViewController.swift */; };
+		2ABEED452BC83BBC00FA057E /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEED442BC83BBC00FA057E /* HelloViewController.swift */; };
+		2ABEED472BC83BDC00FA057E /* EditHelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEED462BC83BDC00FA057E /* EditHelloViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,14 +33,13 @@
 		2A1F21F22BB5A8E60081DBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A1F21F82BB5A9B40081DBEF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2A1FAB912BC85D960045213B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		2A1FAB932BC865940045213B /* T3VC1Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T3VC1Delegate.swift; sourceTree = "<group>"; };
-		2A1FAB952BC866420045213B /* T3VC3Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T3VC3Delegate.swift; sourceTree = "<group>"; };
+		2A1FAB972BC873180045213B /* Greeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greeting.swift; sourceTree = "<group>"; };
 		2A2D2A042BC05FAD00A28421 /* TaskTwoViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTwoViewController1.swift; sourceTree = "<group>"; };
 		2A2D2A062BC05FBE00A28421 /* TaskTwoViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTwoViewController2.swift; sourceTree = "<group>"; };
 		2A2D2A092BC07AC500A28421 /* TaskTwoViewController2Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTwoViewController2Delegate.swift; sourceTree = "<group>"; };
-		2ABEED422BC83B2B00FA057E /* TaskThreeViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskThreeViewController1.swift; sourceTree = "<group>"; };
-		2ABEED442BC83BBC00FA057E /* TaskThreeViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskThreeViewController2.swift; sourceTree = "<group>"; };
-		2ABEED462BC83BDC00FA057E /* TaskThreeViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskThreeViewController3.swift; sourceTree = "<group>"; };
+		2ABEED422BC83B2B00FA057E /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		2ABEED442BC83BBC00FA057E /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
+		2ABEED462BC83BDC00FA057E /* EditHelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHelloViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,12 +106,11 @@
 		2ABEED3D2BC827D000FA057E /* Task3 */ = {
 			isa = PBXGroup;
 			children = (
-				2ABEED422BC83B2B00FA057E /* TaskThreeViewController1.swift */,
-				2A1FAB932BC865940045213B /* T3VC1Delegate.swift */,
+				2ABEED422BC83B2B00FA057E /* LogInViewController.swift */,
 				2A1FAB912BC85D960045213B /* TabBarController.swift */,
-				2ABEED442BC83BBC00FA057E /* TaskThreeViewController2.swift */,
-				2ABEED462BC83BDC00FA057E /* TaskThreeViewController3.swift */,
-				2A1FAB952BC866420045213B /* T3VC3Delegate.swift */,
+				2A1FAB972BC873180045213B /* Greeting.swift */,
+				2ABEED442BC83BBC00FA057E /* HelloViewController.swift */,
+				2ABEED462BC83BDC00FA057E /* EditHelloViewController.swift */,
 			);
 			path = Task3;
 			sourceTree = "<group>";
@@ -189,17 +186,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A1F21FA2BB5A9B40081DBEF /* SecondViewController.swift in Sources */,
-				2ABEED452BC83BBC00FA057E /* TaskThreeViewController2.swift in Sources */,
-				2A1FAB962BC866420045213B /* T3VC3Delegate.swift in Sources */,
+				2ABEED452BC83BBC00FA057E /* HelloViewController.swift in Sources */,
 				2A1FAB922BC85D960045213B /* TabBarController.swift in Sources */,
+				2A1FAB982BC873180045213B /* Greeting.swift in Sources */,
 				2A1F21E92BB5A8E40081DBEF /* ViewController.swift in Sources */,
 				2A2D2A0A2BC07AC500A28421 /* TaskTwoViewController2Delegate.swift in Sources */,
-				2ABEED472BC83BDC00FA057E /* TaskThreeViewController3.swift in Sources */,
+				2ABEED472BC83BDC00FA057E /* EditHelloViewController.swift in Sources */,
 				2A1F21E52BB5A8E40081DBEF /* AppDelegate.swift in Sources */,
-				2ABEED432BC83B2B00FA057E /* TaskThreeViewController1.swift in Sources */,
+				2ABEED432BC83B2B00FA057E /* LogInViewController.swift in Sources */,
 				2A2D2A052BC05FAD00A28421 /* TaskTwoViewController1.swift in Sources */,
 				2A1F21E72BB5A8E40081DBEF /* SceneDelegate.swift in Sources */,
-				2A1FAB942BC865940045213B /* T3VC1Delegate.swift in Sources */,
 				2A2D2A072BC05FBE00A28421 /* TaskTwoViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
