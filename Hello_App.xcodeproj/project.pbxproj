@@ -21,6 +21,7 @@
 		2ABEED432BC83B2B00FA057E /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEED422BC83B2B00FA057E /* LogInViewController.swift */; };
 		2ABEED452BC83BBC00FA057E /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEED442BC83BBC00FA057E /* HelloViewController.swift */; };
 		2ABEED472BC83BDC00FA057E /* EditHelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEED462BC83BDC00FA057E /* EditHelloViewController.swift */; };
+		2AF1B0FD2BD1447100861EEA /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1B0FC2BD1447100861EEA /* NumbersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		2ABEED422BC83B2B00FA057E /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		2ABEED442BC83BBC00FA057E /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
 		2ABEED462BC83BDC00FA057E /* EditHelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHelloViewController.swift; sourceTree = "<group>"; };
+		2AF1B0FC2BD1447100861EEA /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				2ABEED422BC83B2B00FA057E /* LogInViewController.swift */,
 				2A1FAB912BC85D960045213B /* TabBarController.swift */,
+				2AF1B0FC2BD1447100861EEA /* NumbersViewController.swift */,
 				2A1FAB972BC873180045213B /* Greeting.swift */,
 				2ABEED442BC83BBC00FA057E /* HelloViewController.swift */,
 				2ABEED462BC83BDC00FA057E /* EditHelloViewController.swift */,
@@ -191,6 +194,7 @@
 				2A1FAB982BC873180045213B /* Greeting.swift in Sources */,
 				2A1F21E92BB5A8E40081DBEF /* ViewController.swift in Sources */,
 				2A2D2A0A2BC07AC500A28421 /* TaskTwoViewController2Delegate.swift in Sources */,
+				2AF1B0FD2BD1447100861EEA /* NumbersViewController.swift in Sources */,
 				2ABEED472BC83BDC00FA057E /* EditHelloViewController.swift in Sources */,
 				2A1F21E52BB5A8E40081DBEF /* AppDelegate.swift in Sources */,
 				2ABEED432BC83B2B00FA057E /* LogInViewController.swift in Sources */,

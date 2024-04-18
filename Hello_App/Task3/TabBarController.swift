@@ -24,9 +24,12 @@ final class TabBarController: UITabBarController {
 
         let viewTab1 = HelloViewController(greeting: greeting)
         let viewTab2 = EditHelloViewController(greeting: greeting)
+        let viewTab3 = NumbersViewController()
 
         viewTab1.tabBarItem = UITabBarItem(title: "Hello", image: UIImage(systemName: "square.fill"), selectedImage: nil)
         viewTab2.tabBarItem = UITabBarItem(title: "Edit", image: UIImage(systemName: "square.fill"), selectedImage: nil)
-        viewControllers = [viewTab1, viewTab2]
+        viewTab3.tabBarItem = UITabBarItem(title: "Numbers", image: UIImage(systemName: "square.fill"), selectedImage: nil)
+
+        viewControllers = [viewTab1, viewTab2, viewTab3]
     }
 }
