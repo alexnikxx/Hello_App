@@ -10,18 +10,18 @@ import UIKit
 final class NumbersViewController: UIViewController {
     private var imageViews = [UIImageView]()
 
-    private var scrollView: UIScrollView {
+    private var scrollView: UIScrollView = {
         let scroll = UIScrollView()
         scroll.isPagingEnabled = true
         scroll.translatesAutoresizingMaskIntoConstraints = false
         return scroll
-    }
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
+        view.backgroundColor = .white
 
-        self.view.addSubview(scrollView)
+        view.addSubview(scrollView)
 
         let imageNames = ["1", "2", "3", "4", "5"]
         for name in imageNames {
@@ -55,29 +55,12 @@ final class NumbersViewController: UIViewController {
 
     private func setupView() {
         NSLayoutConstraint.activate([
-            scrollView.topAnchor.constraint(equalTo: self.view.topAnchor),
-            scrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            scrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+            scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
 
-        for (index, imageView) in imageViews.enumerated() {
-            imageView.translatesAutoresizingMaskIntoConstraints = false
-
-            NSLayoutConstraint.activate([
-                imageView.topAnchor.constraint(equalTo: scrollView.topAnchor),
-                imageView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-                imageView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-                imageView.heightAnchor.constraint(equalTo: scrollView.heightAnchor),
-                imageView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: scrollView.frame.width * CGFloat(index))
-            ])
-        }
-
-        if let lastImageView = imageViews.last {
-            NSLayoutConstraint.activate([
-                lastImageView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor)
-            ])
-        }
     }
 }
 
