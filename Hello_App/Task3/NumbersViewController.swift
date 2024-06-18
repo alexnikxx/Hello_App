@@ -24,7 +24,7 @@ final class NumbersViewController: UIViewController {
         view.addSubview(scrollView)
 
         let imageNames = ["1", "2", "3", "4", "5"]
-        for name in imageNames {
+        imageNames.forEach { name in
             let image = UIImage(named: name)
             let imageView = UIImageView(image: image)
             imageView.contentMode = .scaleAspectFit
@@ -38,7 +38,7 @@ final class NumbersViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
-        for (index, imageView) in imageViews.enumerated() {
+        imageViews.enumerated().forEach { (index, imageView) in
             imageView.frame.size = scrollView.frame.size
             imageView.frame.origin.x = scrollView.frame.width * CGFloat(index)
             imageView.frame.origin.y = 0
