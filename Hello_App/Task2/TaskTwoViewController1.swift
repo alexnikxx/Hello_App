@@ -7,8 +7,8 @@
 
 import UIKit
 
-final class TaskTwoViewController1: UIViewController, TaskTwoViewController2Delegate {
-    
+final class TaskTwoViewController1: UIViewController {
+
     private let label: UILabel = {
         let label = UILabel()
         label.text = "Привет!"
@@ -35,10 +35,6 @@ final class TaskTwoViewController1: UIViewController, TaskTwoViewController2Dele
         setupView()
     }
 
-    func delegate(greeting: String) {
-        label.text = greeting
-    }
-
     private func setupView() {
         NSLayoutConstraint.activate([
             label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
@@ -49,7 +45,10 @@ final class TaskTwoViewController1: UIViewController, TaskTwoViewController2Dele
     }
     
     @objc private func showNextViewController() {
-        let nextVC = TaskTwoViewController2(delegate: self)
+        let nextVC = TaskTwoViewController2()
+        nextVC.textChanger = { [weak self] text in
+            self?.label.text = text
+        }
         navigationController?.pushViewController(nextVC, animated: true)
     }
 }

@@ -8,17 +8,8 @@
 import UIKit
 
 final class TaskTwoViewController2: UIViewController {
-    private var delegate: TaskTwoViewController2Delegate?
-    
-    init(delegate: TaskTwoViewController2Delegate) {
-        self.delegate = delegate
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+    var textChanger: ((String) -> Void)?
+
     private let label: UILabel = {
         let label = UILabel()
         label.text = "Измените заголовок:"
@@ -27,7 +18,7 @@ final class TaskTwoViewController2: UIViewController {
         return label
     }()
     
-    private let textField: UITextField = {
+    let textField: UITextField = {
         let text = UITextField()
         text.placeholder = "Введите приветствие"
         text.text = "Привет!"
@@ -82,7 +73,7 @@ final class TaskTwoViewController2: UIViewController {
     }
     
     @objc private func textDidChange() {
-        delegate?.delegate(greeting: textField.text ?? "Привет!")
+        textChanger?(textField.text ?? "")
         self.navigationController?.popToRootViewController(animated: true)
     }
     

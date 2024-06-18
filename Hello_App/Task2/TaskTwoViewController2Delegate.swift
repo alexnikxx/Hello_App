@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol TaskTwoViewController2Delegate {
-    func delegate(greeting: String) 
-}
+//protocol TaskTwoViewController2Delegate {
+//    func delegate(greeting: String) 
+//}
