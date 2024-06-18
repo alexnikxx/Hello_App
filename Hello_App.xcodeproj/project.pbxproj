@@ -13,6 +13,15 @@
 		2A1F21EE2BB5A8E60081DBEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A1F21ED2BB5A8E60081DBEF /* Assets.xcassets */; };
 		2A1F21F12BB5A8E60081DBEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A1F21EF2BB5A8E60081DBEF /* LaunchScreen.storyboard */; };
 		2A1F21FA2BB5A9B40081DBEF /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1F21F82BB5A9B40081DBEF /* SecondViewController.swift */; };
+		2A1FAB922BC85D960045213B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FAB912BC85D960045213B /* TabBarController.swift */; };
+		2A1FAB982BC873180045213B /* Greeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1FAB972BC873180045213B /* Greeting.swift */; };
+		2A2D2A052BC05FAD00A28421 /* TaskTwoViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D2A042BC05FAD00A28421 /* TaskTwoViewController1.swift */; };
+		2A2D2A072BC05FBE00A28421 /* TaskTwoViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D2A062BC05FBE00A28421 /* TaskTwoViewController2.swift */; };
+		2A2D2A0A2BC07AC500A28421 /* TaskTwoViewController2Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D2A092BC07AC500A28421 /* TaskTwoViewController2Delegate.swift */; };
+		2ABEED432BC83B2B00FA057E /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEED422BC83B2B00FA057E /* LogInViewController.swift */; };
+		2ABEED452BC83BBC00FA057E /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEED442BC83BBC00FA057E /* HelloViewController.swift */; };
+		2ABEED472BC83BDC00FA057E /* EditHelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEED462BC83BDC00FA057E /* EditHelloViewController.swift */; };
+		2AF1B0FD2BD1447100861EEA /* NumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF1B0FC2BD1447100861EEA /* NumbersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		2A1F21F02BB5A8E60081DBEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A1F21F22BB5A8E60081DBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A1F21F82BB5A9B40081DBEF /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2A1FAB912BC85D960045213B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		2A1FAB972BC873180045213B /* Greeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greeting.swift; sourceTree = "<group>"; };
+		2A2D2A042BC05FAD00A28421 /* TaskTwoViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTwoViewController1.swift; sourceTree = "<group>"; };
+		2A2D2A062BC05FBE00A28421 /* TaskTwoViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTwoViewController2.swift; sourceTree = "<group>"; };
+		2A2D2A092BC07AC500A28421 /* TaskTwoViewController2Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTwoViewController2Delegate.swift; sourceTree = "<group>"; };
+		2ABEED422BC83B2B00FA057E /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		2ABEED442BC83BBC00FA057E /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
+		2ABEED462BC83BDC00FA057E /* EditHelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHelloViewController.swift; sourceTree = "<group>"; };
+		2AF1B0FC2BD1447100861EEA /* NumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +76,46 @@
 			children = (
 				2A1F21E42BB5A8E40081DBEF /* AppDelegate.swift */,
 				2A1F21E62BB5A8E40081DBEF /* SceneDelegate.swift */,
-				2A1F21E82BB5A8E40081DBEF /* ViewController.swift */,
-				2A1F21F82BB5A9B40081DBEF /* SecondViewController.swift */,
+				2ABEED3D2BC827D000FA057E /* Task3 */,
+				2A2D2A082BC07A9300A28421 /* Task2 */,
+				2A2D2A032BC05F8900A28421 /* Task1 */,
 				2A1F21ED2BB5A8E60081DBEF /* Assets.xcassets */,
 				2A1F21EF2BB5A8E60081DBEF /* LaunchScreen.storyboard */,
 				2A1F21F22BB5A8E60081DBEF /* Info.plist */,
 			);
 			path = Hello_App;
+			sourceTree = "<group>";
+		};
+		2A2D2A032BC05F8900A28421 /* Task1 */ = {
+			isa = PBXGroup;
+			children = (
+				2A1F21E82BB5A8E40081DBEF /* ViewController.swift */,
+				2A1F21F82BB5A9B40081DBEF /* SecondViewController.swift */,
+			);
+			path = Task1;
+			sourceTree = "<group>";
+		};
+		2A2D2A082BC07A9300A28421 /* Task2 */ = {
+			isa = PBXGroup;
+			children = (
+				2A2D2A042BC05FAD00A28421 /* TaskTwoViewController1.swift */,
+				2A2D2A062BC05FBE00A28421 /* TaskTwoViewController2.swift */,
+				2A2D2A092BC07AC500A28421 /* TaskTwoViewController2Delegate.swift */,
+			);
+			path = Task2;
+			sourceTree = "<group>";
+		};
+		2ABEED3D2BC827D000FA057E /* Task3 */ = {
+			isa = PBXGroup;
+			children = (
+				2ABEED422BC83B2B00FA057E /* LogInViewController.swift */,
+				2A1FAB912BC85D960045213B /* TabBarController.swift */,
+				2AF1B0FC2BD1447100861EEA /* NumbersViewController.swift */,
+				2A1FAB972BC873180045213B /* Greeting.swift */,
+				2ABEED442BC83BBC00FA057E /* HelloViewController.swift */,
+				2ABEED462BC83BDC00FA057E /* EditHelloViewController.swift */,
+			);
+			path = Task3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +189,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A1F21FA2BB5A9B40081DBEF /* SecondViewController.swift in Sources */,
+				2ABEED452BC83BBC00FA057E /* HelloViewController.swift in Sources */,
+				2A1FAB922BC85D960045213B /* TabBarController.swift in Sources */,
+				2A1FAB982BC873180045213B /* Greeting.swift in Sources */,
 				2A1F21E92BB5A8E40081DBEF /* ViewController.swift in Sources */,
+				2A2D2A0A2BC07AC500A28421 /* TaskTwoViewController2Delegate.swift in Sources */,
+				2AF1B0FD2BD1447100861EEA /* NumbersViewController.swift in Sources */,
+				2ABEED472BC83BDC00FA057E /* EditHelloViewController.swift in Sources */,
 				2A1F21E52BB5A8E40081DBEF /* AppDelegate.swift in Sources */,
+				2ABEED432BC83B2B00FA057E /* LogInViewController.swift in Sources */,
+				2A2D2A052BC05FAD00A28421 /* TaskTwoViewController1.swift in Sources */,
 				2A1F21E72BB5A8E40081DBEF /* SceneDelegate.swift in Sources */,
+				2A2D2A072BC05FBE00A28421 /* TaskTwoViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
