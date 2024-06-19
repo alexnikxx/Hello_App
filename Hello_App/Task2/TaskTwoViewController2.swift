@@ -69,6 +69,10 @@ final class TaskTwoViewController2: UIViewController {
             label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             label.leadingAnchor.constraint(equalTo: textField.leadingAnchor),
             
+<<<<<<< HEAD
+=======
+            textField.widthAnchor.constraint(equalToConstant: 300),
+>>>>>>> task2
             textField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 28),
             textField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -28),
             textField.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 10),
