@@ -69,15 +69,16 @@ final class TaskTwoViewController2: UIViewController {
             label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             label.leadingAnchor.constraint(equalTo: textField.leadingAnchor),
             
-            textField.widthAnchor.constraint(equalToConstant: 300),
-            textField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            textField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 28),
+            textField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -28),
             textField.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 10),
             
             buttonSave.topAnchor.constraint(equalTo: textField.bottomAnchor, constant: 20),
             buttonSave.leadingAnchor.constraint(equalTo: textField.leadingAnchor),
             
             buttonCancel.centerYAnchor.constraint(equalTo: buttonSave.centerYAnchor),
-            buttonCancel.trailingAnchor.constraint(equalTo: textField.trailingAnchor)
+            buttonCancel.trailingAnchor.constraint(equalTo: textField.trailingAnchor),
+            buttonCancel.leadingAnchor.constraint(greaterThanOrEqualTo: buttonSave.trailingAnchor, constant: 20)
         ])
     }
     

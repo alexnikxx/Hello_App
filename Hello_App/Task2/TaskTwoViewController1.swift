@@ -12,9 +12,11 @@ final class TaskTwoViewController1: UIViewController, TaskTwoViewController2Dele
         label.text = greeting
     }
     
-    private var label: UILabel = {
+    private let label: UILabel = {
         let label = UILabel()
         label.text = "Привет!"
+        label.textAlignment = .center
+        label.numberOfLines = 0
         label.font = .systemFont(ofSize: 40)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -41,7 +43,8 @@ final class TaskTwoViewController1: UIViewController, TaskTwoViewController2Dele
     private func setupView() {
         NSLayoutConstraint.activate([
             label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
-            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            label.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 8),
+            label.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -8),
             label.bottomAnchor.constraint(equalTo: button.topAnchor, constant: -20),
             button.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
