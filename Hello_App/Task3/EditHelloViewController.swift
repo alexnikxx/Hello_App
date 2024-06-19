@@ -63,12 +63,12 @@ final class EditHelloViewController: UIViewController, UITextFieldDelegate {
 
     private func setupView() {
         NSLayoutConstraint.activate([
-            textField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            textField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
-            textField.widthAnchor.constraint(equalToConstant: 300),
-
             label.leadingAnchor.constraint(equalTo: textField.leadingAnchor),
-            label.bottomAnchor.constraint(equalTo: textField.topAnchor, constant: -10)
+            label.bottomAnchor.constraint(equalTo: textField.topAnchor, constant: -10),
+
+            textField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
+            textField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 40),
+            textField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -40)
         ])
     }
 }

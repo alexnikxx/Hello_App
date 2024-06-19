@@ -22,6 +22,8 @@ final class HelloViewController: UIViewController {
     private let label: UILabel = {
         let label = UILabel()
         label.text = ""
+        label.numberOfLines = 0
+        label.textAlignment = .center
         label.font = .systemFont(ofSize: 30, weight: .medium)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -42,7 +44,8 @@ final class HelloViewController: UIViewController {
 
     private func setupView() {
         NSLayoutConstraint.activate([
-            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            label.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 40),
+            label.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -40),
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
