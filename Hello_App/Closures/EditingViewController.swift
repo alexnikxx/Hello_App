@@ -18,7 +18,7 @@ final class EditingViewController: UIViewController {
         return label
     }()
 
-    let textField: UITextField = {
+    private let textField: UITextField = {
         let text = UITextField()
         text.placeholder = "Введите приветствие"
         text.text = "Привет!"
