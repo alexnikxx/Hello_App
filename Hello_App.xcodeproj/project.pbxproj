@@ -18,6 +18,8 @@
 		2A2D2A052BC05FAD00A28421 /* TaskTwoViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D2A042BC05FAD00A28421 /* TaskTwoViewController1.swift */; };
 		2A2D2A072BC05FBE00A28421 /* TaskTwoViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D2A062BC05FBE00A28421 /* TaskTwoViewController2.swift */; };
 		2A2D2A0A2BC07AC500A28421 /* TaskTwoViewController2Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2D2A092BC07AC500A28421 /* TaskTwoViewController2Delegate.swift */; };
+		2A54A0E02C236EFE007A1946 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A54A0DF2C236EFE007A1946 /* GreetingViewController.swift */; };
+		2A54A0E22C236F16007A1946 /* EditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A54A0E12C236F16007A1946 /* EditingViewController.swift */; };
 		2ABEED432BC83B2B00FA057E /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEED422BC83B2B00FA057E /* LogInViewController.swift */; };
 		2ABEED452BC83BBC00FA057E /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEED442BC83BBC00FA057E /* HelloViewController.swift */; };
 		2ABEED472BC83BDC00FA057E /* EditHelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABEED462BC83BDC00FA057E /* EditHelloViewController.swift */; };
@@ -38,6 +40,8 @@
 		2A2D2A042BC05FAD00A28421 /* TaskTwoViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTwoViewController1.swift; sourceTree = "<group>"; };
 		2A2D2A062BC05FBE00A28421 /* TaskTwoViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTwoViewController2.swift; sourceTree = "<group>"; };
 		2A2D2A092BC07AC500A28421 /* TaskTwoViewController2Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTwoViewController2Delegate.swift; sourceTree = "<group>"; };
+		2A54A0DF2C236EFE007A1946 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
+		2A54A0E12C236F16007A1946 /* EditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingViewController.swift; sourceTree = "<group>"; };
 		2ABEED422BC83B2B00FA057E /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		2ABEED442BC83BBC00FA057E /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
 		2ABEED462BC83BDC00FA057E /* EditHelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHelloViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 			children = (
 				2A1F21E42BB5A8E40081DBEF /* AppDelegate.swift */,
 				2A1F21E62BB5A8E40081DBEF /* SceneDelegate.swift */,
+				2A54A0DE2C236DB3007A1946 /* Closures */,
 				2ABEED3D2BC827D000FA057E /* Task3 */,
 				2A2D2A082BC07A9300A28421 /* Task2 */,
 				2A2D2A032BC05F8900A28421 /* Task1 */,
@@ -103,6 +108,15 @@
 				2A2D2A092BC07AC500A28421 /* TaskTwoViewController2Delegate.swift */,
 			);
 			path = Task2;
+			sourceTree = "<group>";
+		};
+		2A54A0DE2C236DB3007A1946 /* Closures */ = {
+			isa = PBXGroup;
+			children = (
+				2A54A0DF2C236EFE007A1946 /* GreetingViewController.swift */,
+				2A54A0E12C236F16007A1946 /* EditingViewController.swift */,
+			);
+			path = Closures;
 			sourceTree = "<group>";
 		};
 		2ABEED3D2BC827D000FA057E /* Task3 */ = {
@@ -199,7 +213,9 @@
 				2A1F21E52BB5A8E40081DBEF /* AppDelegate.swift in Sources */,
 				2ABEED432BC83B2B00FA057E /* LogInViewController.swift in Sources */,
 				2A2D2A052BC05FAD00A28421 /* TaskTwoViewController1.swift in Sources */,
+				2A54A0E02C236EFE007A1946 /* GreetingViewController.swift in Sources */,
 				2A1F21E72BB5A8E40081DBEF /* SceneDelegate.swift in Sources */,
+				2A54A0E22C236F16007A1946 /* EditingViewController.swift in Sources */,
 				2A2D2A072BC05FBE00A28421 /* TaskTwoViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,23 +1,14 @@
 //
-//  TaskTwoViewController2.swift
+//  EditingViewController.swift
 //  Hello_App
 //
-//  Created by Aleksandra Nikiforova on 05/04/24.
+//  Created by Aleksandra Nikiforova on 19/06/24.
 //
 
 import UIKit
 
-final class TaskTwoViewController2: UIViewController {
-    private var delegate: TaskTwoViewController2Delegate?
-
-    init(delegate: TaskTwoViewController2Delegate) {
-        self.delegate = delegate
-        super.init(nibName: nil, bundle: nil)
-    }
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+final class EditingViewController: UIViewController {
+    var textChanger: ((String) -> Void)?
 
     private let label: UILabel = {
         let label = UILabel()
@@ -27,7 +18,7 @@ final class TaskTwoViewController2: UIViewController {
         return label
     }()
 
-    private let textField: UITextField = {
+    let textField: UITextField = {
         let text = UITextField()
         text.placeholder = "Введите приветствие"
         text.text = "Привет!"
@@ -68,22 +59,21 @@ final class TaskTwoViewController2: UIViewController {
         NSLayoutConstraint.activate([
             label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             label.leadingAnchor.constraint(equalTo: textField.leadingAnchor),
-            
-            textField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 28),
-            textField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -28),
+
+            textField.widthAnchor.constraint(equalToConstant: 300),
+            textField.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             textField.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 10),
 
             buttonSave.topAnchor.constraint(equalTo: textField.bottomAnchor, constant: 20),
             buttonSave.leadingAnchor.constraint(equalTo: textField.leadingAnchor),
 
             buttonCancel.centerYAnchor.constraint(equalTo: buttonSave.centerYAnchor),
-            buttonCancel.trailingAnchor.constraint(equalTo: textField.trailingAnchor),
-            buttonCancel.leadingAnchor.constraint(greaterThanOrEqualTo: buttonSave.trailingAnchor, constant: 20)
+            buttonCancel.trailingAnchor.constraint(equalTo: textField.trailingAnchor)
         ])
     }
 
     @objc private func textDidChange() {
-        delegate?.delegate(greeting: textField.text ?? "Привет!")
+        textChanger?(textField.text ?? "")
         self.navigationController?.popToRootViewController(animated: true)
     }
 
